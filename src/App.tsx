@@ -43,7 +43,7 @@ const App = (): JSX.Element => {
     <div>
       <input type="file" onChange={onFileChange} key={inputKey || ''} />
       <button type="submit" onClick={onFileUpload}>
-        Upload!
+        Upload
           </button>
     </div>
   )
@@ -70,7 +70,7 @@ const App = (): JSX.Element => {
 
   return (
     <div>
-      <h1>Upload file to Azure Blob Storage</h1>
+      <h1>PE Database Upload</h1>
       {storageConfigured && !uploading && DisplayForm()}
       {storageConfigured && uploading && <div>Uploading</div>}
       <hr />
